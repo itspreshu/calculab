@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#321565"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#3FB543"
+            android:textSize="96sp" />
+
+        <EditText
+            android:id="@+id/aNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFEB3B"
+            android:ems="10"
+            android:hint="Ingresa un numero..."
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="#34B639"
+            android:textColorHint="#34B639"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/bNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFEB3B"
+            android:ems="10"
+            android:hint="Ingresa un numero..."
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="#34B639"
+            android:textColorHint="#34B639"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3DBF42"
+            android:minHeight="100dip"
+            android:text="Sumar" />
+
+        <Button
+            android:id="@+id/substractButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3DBF42"
+            android:minHeight="100dip"
+            android:text="Restar" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3DBF42"
+            android:minHeight="100dip"
+            android:text="Multiplicar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
